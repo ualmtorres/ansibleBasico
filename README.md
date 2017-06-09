@@ -8,12 +8,12 @@ Requisitos previos:
 
 ## Scaffolding
 
-Usaremos una estructura como la descrita que incluirá:
+Usaremos una estructura como la descrita, que incluirá:
 
 * Archivo de configuración `ansible.cfg`
 * Playbook `playbook.yml`
 * Carpeta de roles (_grupos de operaciones_). Incluye una carpeta para cada rol 
-** En cada rol: `/tasks/main.yml` incluye las operaciones del rol
+ * En cada rol incluiremos: `/tasks/main.yml` incluye las operaciones del rol
 
 ```
 ansible.cfg          # Opciones de configuración (p.e. arvhivo de inventario predetermi$
@@ -86,7 +86,7 @@ ansible-playbook playbookFile.yml --start-at-task="nombre de la tarea por la que
 
 ## Ejemplos
 
-* [Update && Upgrade](roles/actualizar/tasks/main.yml)
+* [Update && Upgrade](./roles/actualizar/tasks/main.yml)
 * [Crear un directorio y descargar un archivo](./02descargar_logo.yml)
 * [Instalación de un paquete](./03instalar_map.yml)
 * [Instalación de varios paquetes](./04instalar_varios.yml)
